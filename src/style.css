@@ -1,10 +1,12 @@
 :root {
   --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
   --box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 body {
   margin: 60px auto;
-  max-width: 1000px; /*change this to 800px later on*/
+  max-width: 800px;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
@@ -12,7 +14,6 @@ body {
 h1,
 h2,
 h3 {
-  /* text-align: center; */
   margin: 0;
   font-weight: bold;
 }
@@ -27,7 +28,11 @@ h2 {
 
 h3 {
   font-size: 24px;
-  opacity: 0.8;
+  opacity: 0.7;
+}
+
+a {
+  color: var(--primary-color);
 }
 
 .navigation-links {
@@ -36,13 +41,27 @@ h3 {
   margin-top: 40px;
 }
 
+.about-me-paragraphs {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
 .navigation-links a {
-  color: black;
-  padding: 20px 15px;
-  margin: 20px;
   border: 1px solid var(--primary-color);
   border-radius: 5px;
+  margin: 20px;
+  padding: 20px 15px;
   text-decoration: none;
+}
+
+.about-me-paragraphs p {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px;
+  padding: 20px;
 }
 
 #contact-link {
@@ -53,4 +72,9 @@ h3 {
 
 #about-link {
   color: var(--primary-color);
+}
+
+#email {
+  font-size: 28px;
+  text-decoration: none;
 }
