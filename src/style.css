@@ -5,8 +5,8 @@
 }
 
 body {
-  margin: 60px auto;
-  max-width: 800px;
+  margin: 100px auto;
+  /* max-width: 800px; */
   text-align: center;
   /* font-family: "Times New Roman", Times, serif; */
 }
@@ -24,6 +24,7 @@ h1 {
 
 h2 {
   font-size: 48px;
+  font-weight: 500;
 }
 
 h3 {
@@ -39,10 +40,17 @@ li {
   text-align: left;
 }
 
+p {
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
 .navigation-links {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin: 40px auto;
 }
 
 .about-me-paragraphs {
@@ -68,13 +76,13 @@ li {
   padding: 20px;
 }
 
-#contact-link {
+.primary-link {
   color: #fff;
   background-color: var(--primary-color);
   box-shadow: var(--box-shadow);
 }
 
-#about-link {
+.secondary-link {
   color: var(--primary-color);
 }
 
